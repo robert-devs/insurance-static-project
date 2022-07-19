@@ -325,7 +325,7 @@ h1 {
 /* subscribe */
 .subscribe{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .subscribe-box {
@@ -338,10 +338,9 @@ h1 {
 }
 
 .main-box {
-  text-align: center;
   display: flex;
   padding: 20px;
-  justify-content: space-around;
+  justify-content: left;
   align-items: center;
 }
 
@@ -350,6 +349,7 @@ h1 {
   /* display: flex; */
   left: 0;
   right: 0;
+  text-align: left;
 }
 
 .main-box input {
@@ -388,14 +388,17 @@ h1 {
 }
 
 .pricing-cards {
-  display: flex;
+  display: grid;
   justify-content: center;
-  margin-top: 4%;
-  position: relative;
+  grid-template-columns: 200px 230px 200px;
+  grid-template-rows: 1 220px;
+  /* margin-top: 4%; */
+  /* position: relative; */
 }
 
 .pricing-cards h2 {
   color: #23a6f0;
+  text-align: center;
 }
 
 .one,
@@ -405,13 +408,17 @@ h1 {
   border-radius: 8px;
   /* width: 1%; */
   padding: 10px;
-  height: 50%;
+  /* height: 50%; */
 
 }
 
-.one ul li {
-  list-style-type: circle;
-  justify-items: left;
+.one,  li {
+  list-style: none;
+  text-align: left;
+ 
+}
+.one h1{
+  text-align: center;
 }
 
 .pricing-cards button {
@@ -421,16 +428,17 @@ h1 {
   color: white;
   border: none;
   border-radius: 5px;
+  text-align: center;
 }
 
 .Two {
-  height: 55%;
+  
   position: relative;
   top: -10px;
-  /* bottom: 5px; */
   background-color: #1d204b;
   border-radius: 5px;
   color: white;
+  margin-bottom: 0;
 }
 
 .Two h1 {
@@ -440,19 +448,22 @@ h1 {
 /* pricing */
 
 /* world */
+
 .world {
+  /* width: 900PX; */
+  justify-content: C;
   background-color: rgb(33, 15, 62);
   text-align: left;
   padding: 5%;
   /* margin-top: 8%; */
-  height: 1000px;
+  height: 850px;
   color: white;
   position: relative;
 }
 
 .word-top {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 
 }
 
@@ -476,8 +487,8 @@ h1 {
 }
 
 .word-bottom img {
-  width: 300px;
-  height: 570px;
+  width: 200px;
+  /* height: 570px; */
 }
 
 .word-bottomform {
@@ -597,6 +608,7 @@ h1 {
   text-align: left;
 }
 .footer-bottom-right{
+  
   color: #23a6f0;
 }
 /* footer */
